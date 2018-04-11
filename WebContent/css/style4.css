@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+*{ &, &:before, &:after{ box-sizing: border-box } }
+
+
+
+.radio-custom{
+  opacity: 0;   
+}
+
+
+.radio-custom,
+.radio-custom-label{
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2px;
+  cursor: pointer;
+}
+
+
+.radio-custom + .radio-custom-label:before{
+  content: "";
+  background: transparent;
+  border: 2px solid red;
+  display: inline-block;
+  vertical-align: top;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  margin-right: 5px;
+}
+
+
+.radio-custom:checked + .radio-custom-label:before{
+  background: blue;
+  border: 2px solid white;
+  border-color: #74f99a;
+}
+
+
+.radio-custom:checked + .radio-custom-label{ background-color: #FFFF00; }
+
+.radio-custom + .radio-custom-label:before{ border-radius: 50% }
+
+
+
+
